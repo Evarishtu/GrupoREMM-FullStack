@@ -1,0 +1,9 @@
+@use '../base/variables' as v;
+
+main{
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: v.$french_grey;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
+}

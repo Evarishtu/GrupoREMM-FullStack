@@ -1,0 +1,14 @@
+{
+  "name": "voluntariados",
+  "version": "1.0.0",
+  "description": "Producto 1 ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "author": "E.Dongua",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.93.2"
+  }
+}

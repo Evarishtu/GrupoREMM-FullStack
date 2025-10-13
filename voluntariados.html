@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntariads</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="build/css/app.css">
+    <script src="js/data.js" defer></script>
+    <script src="js/funciones.js" defer></script>
+    <script src="js/listener.js" defer></script>
+</head>
+<body>
+    <header class="barra">
+            <nav class="container nav">
+                <a class="nav-link" href="login.html">Login</a>
+                <a class="nav-link" href="voluntariados.html">Voluntariado</a>
+                <a class="nav-link" href="#">Alta de usuario</a>
+            </nav>
+    </header>
+    <main class="container">
+        <h1>Gestión de voluntariados</h1>
+        <div class="alta-consulta">
+            <form class="alta" id="alta">
+                <fieldset>
+                    <legend>Alta de voluntariado</legend>
+                    <div>
+                        <label>Título</label>
+                        <input type="text" placeholder="Nombre del voluntariado" id="titulo">
+                    </div>
+                    <div>
+                        <label>Usuario</label>
+                        <input type="text" placeholder="Autor de la publicación" id="usuario">
+                    </div>
+                    <div>
+                        <label>Fecha</label>
+                        <input type="date" id="fecha">
+                    </div>
+                    <div>
+                        <label>Descripción</label>
+                        <textarea id="descripcion"></textarea>
+                    </div>
+                    <div>
+                        <label>Tipo</label>
+                        <select id="tipo">
+                            <option value="" disabled selected>--Seleccione--</option>
+                            <option value="Peticion">Petición</option>
+                            <option value="Oferta">Oferta</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Dar de alta" class="btn btn-success">
+                </fieldset>
+            </form>
+            <section>
+                <h2>Consulta y borrado de voluntariado</h2> 
+                <div class="consulta" id="consulta">
+                    <div>
+                        <h3>Título</h3>
+                    </div>
+                    <div>
+                        <h3>Usuario</h3>
+                    </div>
+                    <div>
+                        <h3>Fecha</h3>
+                    </div>
+                    <div>
+                        <h3>Descripción</h3>
+                    </div>
+                    <div>
+                        <h3>Tipo</h3>
+                    </div>
+                    <div>
+                        <h3>Acciones</h3>
+                    </div> 
+                </div>
+            </section>
+        </div>
+    </main>
+    </body>
+</body>
+</html>
