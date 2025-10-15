@@ -1,30 +1,7 @@
-function addVoluntariado(){
-    const titulo = document.getElementById('titulo').value;
-    const usuario = document.getElementById('usuario').value;
-    const fecha = document.getElementById('fecha').value;
-    const descripcion = document.getElementById('descripcion').value;
-    const tipo = document.getElementById('tipo').value;
-
-    const nuevo_voluntariado = {
-        titulo: titulo,
-        usuario: usuario,
-        fecha: fecha,
-        descripcion: descripcion,
-        tipo: tipo
-    }
-    voluntariados.push(nuevo_voluntariado);
-    mostrarDatos();
-}
-
-function eliminarVoluntariado(indice){
-    voluntariados.splice(indice, 1);   
-    mostrarDatos();
-}
-
 function mostrarDatos(){
-    const contenedor = document.querySelector('.consulta')
+    const form_voluntariados = document.querySelector('.consulta')
 
-    contenedor.innerHTML = `
+    form_voluntariados.innerHTML = `
         <div> 
             <h3>Título</h3>
         </div>
@@ -45,7 +22,7 @@ function mostrarDatos(){
         </div> 
     `;
     for(let i = 0; i < voluntariados.length; i++){
-        contenedor.innerHTML += `
+        form_voluntariados.innerHTML += `
         <div>
             <p>${voluntariados[i].titulo}</p>
         </div>

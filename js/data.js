@@ -1,9 +1,12 @@
-let voluntariados = [
+let voluntariados = [];
+
+let usuarios = [
     {
-        titulo: '',
-        usuario: '',
-        fecha: '',
-        descripcion: '',
-        tipo: '' 
+        email: 'edongua@uoc.edu',
+        password: '12345'
+    },
+    {
+        email: 'marta@uoc.edu',
+        password: '12345'
     }
-];
+]
