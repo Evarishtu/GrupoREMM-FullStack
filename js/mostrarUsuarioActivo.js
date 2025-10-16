@@ -6,6 +6,8 @@ function mostrarUsuarioActivo(){
         if(usuario_activo){
             campo_usuario_activo.innerHTML = `${usuario_activo}`;
         }
+    }else{
+        campo_usuario_activo.textContent = '';
     }
 }
-document.addEventListener('DOMContentLoaded', mostrarUsuarioActivo);
+

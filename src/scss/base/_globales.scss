@@ -4,18 +4,24 @@ html {
     font-size: 62.5%;
 }
 
-h1{
+h1, h2, h3, p, a, legend, label {
     font-family: v.$fuente_principal;
-    font-weight: 800;
+}
+
+h1{  
+    font-weight: 600;
     font-size: 3.5rem;
     color: v.$negro;
+}
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 h3{
     font-size: 2rem;
 }
 a{
     text-decoration: none;
-    font-family: v.$fuente_principal;
     font-weight: 400;
     font-size: 3rem;
 }
@@ -23,7 +29,6 @@ a{
 p{
     font-size: 1.5rem;
 }
-
 input,
 select,
 textarea{
@@ -37,4 +42,8 @@ textarea{
     }
     textarea{
     height: 20rem;
+}
+
+.btn{
+    font-size: 2rem;
 }
