@@ -2,11 +2,19 @@ html {
   font-size: 62.5%;
 }
 
-h1 {
+h1, h2, h3, p, a, legend, label {
   font-family: "Montserrat", sans-serif;
-  font-weight: 800;
+}
+
+h1 {
+  font-weight: 600;
   font-size: 3.5rem;
   color: #000000;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 h3 {
@@ -15,7 +23,6 @@ h3 {
 
 a {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 3rem;
 }
@@ -38,6 +45,10 @@ textarea {
 
 textarea {
   height: 20rem;
+}
+
+.btn {
+  font-size: 2rem;
 }
 
 .barra {
@@ -70,35 +81,58 @@ main {
   gap: 2rem;
 }
 
-.alta {
+.contenedor-alta {
   flex: 0 0 45%;
 }
-.alta p {
+.contenedor-alta p {
   font-size: 4rem;
 }
-.alta legend {
-  font-family: "Montserrat", sans-serif;
+.contenedor-alta legend {
   font-size: 2.5rem;
   color: #000000;
 }
-.alta label {
-  font-family: "Montserrat", sans-serif;
+.contenedor-alta label {
   font-size: 2rem;
-  text-transform: uppercase;
   display: block;
 }
 
-.consulta {
+.contenedor-consulta {
   flex: 0 0 50%;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  flex-direction: column;
+}
+
+.consulta {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.consulta table {
+  margin-top: 5rem;
+}
+.consulta th, .consulta td {
+  border: 0.1rem solid #000000;
+  padding: 0.8rem 1rem;
+}
+.consulta th {
+  background-color: white;
+  font-weight: bold;
+}
+.consulta .btn {
+  font-size: 1.5rem;
 }
 
 .contenedor-login {
   flex-direction: column;
   width: 60rem;
   justify-self: center;
+}
+.contenedor-login legend {
+  font-size: 3.5rem;
+}
+.contenedor-login .login {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=app.css.map */
