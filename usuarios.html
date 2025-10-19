@@ -13,9 +13,9 @@
         crossorigin="anonymous">
         <link rel="stylesheet" href="build/css/app.css">
         <script src="js/data.js" defer></script>
-        <script src="js/addVoluntariado.js" defer></script>
-        <script src="js/mostrarVoluntariados.js" defer></script>
-        <script src="js/eliminarVoluntariado.js" defer></script>
+        <script src="js/addUsuario.js" defer></script>
+        <script src="js/mostrarUsuarios.js" defer></script>
+        <script src="js/eliminarUsuario.js" defer></script>
         <script src="js/listener.js" defer></script>
         <script src="js/mostrarUsuarioActivo.js" defer></script>
     </head>
@@ -29,48 +29,35 @@
             </nav>
     </header>
     <main class="container">
-        <h1>Gestión de voluntariados</h1>
+        <h1>Gestión de Usuarios</h1>
         <div class="alta-consulta">
-            <form class="contenedor-alta" id="alta">
+            <form class="contenedor-alta" id="altaUsuario">
                 <fieldset>
-                    <legend>Alta de voluntariado</legend>
+                    <legend>Alta de Usuarios</legend>
                     <div>
-                        <label>Título</label>
-                        <input type="text" placeholder="Nombre del voluntariado" id="titulo">
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Nombre del usuario" id="nombre">
                     </div>
                     <div>
-                        <label>Usuario</label>
-                        <input type="text" placeholder="Autor de la publicación" id="usuario">
+                        <label>Email</label>
+                        <input type="text" placeholder="Email del usuario" id="email">
                     </div>
                     <div>
-                        <label>Fecha</label>
-                        <input type="date" id="fecha">
+                        <label>Password</label>
+                        <input type="password" id="password">
                     </div>
                     <div>
-                        <label>Descripción</label>
-                        <textarea id="descripcion"></textarea>
-                    </div>
-                    <div>
-                        <label>Tipo</label>
-                        <select id="tipo">
-                            <option value="" disabled selected>--Seleccione--</option>
-                            <option value="Peticion">Petición</option>
-                            <option value="Oferta">Oferta</option>
-                        </select>
-                    </div>
                     <input type="submit" value="Dar de alta" class="btn btn-success">
                 </fieldset>
             </form>
             <section class="contenedor-consulta">
-                <h2>Consulta y borrado de voluntariado</h2> 
+                <h2>Consulta y borrado de Usuarios</h2> 
                 <table class="consulta">
                     <thead>
                         <tr>
-                            <th>Título</th>   
-                            <th>Usuario</th>
-                            <th>Fecha</th>
-                            <th>Descripción</th>
-                            <th>Tipo</th>
+                            <th>Nombre</th>   
+                            <th>Email</th>
+                            <th>Password</th>
                             <th>Acciones</th>
                         </tr> 
                     </thead>

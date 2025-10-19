@@ -16,4 +16,12 @@ if(form_login){
     });
 }
 
+const form_usuarios = document.getElementById('altaUsuario');
+if(form_usuarios){
+    form_usuarios.addEventListener('submit', function(evento){
+        evento.preventDefault();
+        addUsuario();
+        form_usuarios.reset();
+    });
 
+}
