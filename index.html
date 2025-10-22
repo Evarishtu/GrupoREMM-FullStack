@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dashboard</title>
+        <title>REMM</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,17 +15,9 @@
         <script src="js/data.js"></script>
         <script src="js/funciones.js"></script>
         <script src="js/listener.js"></script>
-        <script>document.addEventListener('DOMContentLoaded', mostrarDashboard);</script>
     </head>
     <body>
-        <header class="barra">
-                <nav class="container nav">
-                    <a class="nav-link" href="login.html">Login</a>
-                    <a class="nav-link" href="voluntariados.html">Voluntariado</a>
-                    <a class="nav-link" href="usuarios.html">Alta de usuario</a>
-                    <p class="nav-link" id="usuario-logueado">-no login-</p>
-                </nav>
-        </header>
+        <div id="menu"></div>
         <main class="container">
             <div class="mt-5">
                 <h1 class="text-center align-middle">Dashboard de voluntariado sobre mascotas</h1>
@@ -37,5 +29,9 @@
 
             <div id="ofertas" class="row row-cols-3"></div>
         </main>      
+        <script>document.addEventListener('DOMContentLoaded', () => {
+            addMenu();
+            mostrarDashboard();
+        });</script>
     </body>
 </html>
