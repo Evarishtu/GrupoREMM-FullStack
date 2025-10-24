@@ -3,11 +3,9 @@
 html {
     font-size: 62.5%;
 }
-
 h1, h2, h3, p, a, legend, label {
     font-family: v.$fuente_principal;
 }
-
 h1{  
     font-weight: 600;
     font-size: 3.5rem;
@@ -25,7 +23,6 @@ a{
     font-weight: 400;
     font-size: 3rem;
 }
-
 p{
     font-size: 1.5rem;
 }
@@ -43,7 +40,6 @@ textarea{
     textarea{
     height: 20rem;
 }
-
 .btn{
     font-size: 2rem;
 }
