@@ -5,8 +5,8 @@ if(form_voluntariados){
         addVoluntariado();
         form_voluntariados.reset();
     });
-
 }
+
 const form_login = document.getElementById('login')
 if(form_login){
     form_login.addEventListener('submit', function(evento){
@@ -23,5 +23,13 @@ if(form_usuarios){
         addUsuario();
         form_usuarios.reset();
     });
-
 }
+
+function addFlipCardListener() {
+    document.querySelectorAll('.flip-card-inner').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('is-flipped');
+        });
+    });
+}
+
