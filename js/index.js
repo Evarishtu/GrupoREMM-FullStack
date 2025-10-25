@@ -9,7 +9,7 @@ function mostrarDashboard() {
         const textClass = item.tipo === 'peticion' ? 'text-white' : 'text-white';
 
         const fila = `
-            <div class="col mb-3">
+            <div class="col mb-3 fade-in-bottom">
                 <div class="flip-card">
                     <div class="flip-card-inner" data-id="${i}">
                         <div class="card p-3 card-front ${typeClass}">

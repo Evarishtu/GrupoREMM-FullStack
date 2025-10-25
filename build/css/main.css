@@ -3,6 +3,7 @@
 @import url("variables.css");
 @import url("dashboard.css");
 @import url("navbar.css");
+@import url("fade_in.css");
 
 html, body {
     height: 100%;

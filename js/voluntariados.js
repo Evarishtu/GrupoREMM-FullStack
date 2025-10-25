@@ -69,11 +69,11 @@ function mostrarDatosVoluntariados(){
 
     form_voluntariados.innerHTML = '';
         
-    
+    let delay = 0;
     for(let i = 0; i < voluntariados.length; i++){
         
         const fila =`
-            <tr>
+            <tr class="fade-in-right" style="--d:${delay}ms">
                 <td>${voluntariados[i].titulo}</td>        
                 <td>${voluntariados[i].usuario}</td>       
                 <td>${voluntariados[i].fecha}</td>      
@@ -85,6 +85,7 @@ function mostrarDatosVoluntariados(){
                 </td>
             </tr> 
         `;
+        delay += 100;
         form_voluntariados.innerHTML += fila;
     }
 }

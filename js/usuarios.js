@@ -63,11 +63,11 @@ function mostrarDatosUsuarios(){
 
     form_usuarios.innerHTML = '';
         
-    
+    let delay = 0;
     for(let i = 0; i < usuarios.length; i++){
         
         const fila =`
-            <tr>
+            <tr class="fade-in-right" style="--d:${delay}ms">
                 <td>${usuarios[i].nombre}</td>        
                 <td>${usuarios[i].email}</td>       
                 <td>${usuarios[i].password}</td>
@@ -76,6 +76,7 @@ function mostrarDatosUsuarios(){
                 </td>
             </tr> 
         `;
+        delay += 100;
         form_usuarios.innerHTML += fila;
     }
 }
