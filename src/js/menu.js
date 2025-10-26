@@ -1,5 +1,5 @@
 function addMenu() {
-  return fetch('menu.html')
+  return fetch('/src/components/menu.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('menu').innerHTML = data;
@@ -9,18 +9,16 @@ function addMenu() {
 }  
 
 function setActiveLink() {
-    const path = window.location.pathname.split('/').pop();
+    const currentFile  = window.location.pathname.split('/').pop();
     const links = document.querySelectorAll('.navbar-nav .nav-link');
     
     links.forEach(link => {
-        const linkHref = link.getAttribute('href');
+        const linkFile  = link.getAttribute('href').split('/').pop();
         
-        if (linkHref === path) {
+        if (linkFile === currentFile || (currentFile === '' && linkFile === 'index.html')) {
             link.classList.add('nav-link-active-custom');
-        } 
-        
-        if (path === '' && linkHref === 'index.html') {
-             link.classList.add('nav-link-active-custom');
+        } else {
+            link.classList.remove('nav-link-active-custom'); 
         }
     });
 }
