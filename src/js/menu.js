@@ -13,12 +13,15 @@ function setActiveLink() {
     const links = document.querySelectorAll('.navbar-nav .nav-link');
     
     links.forEach(link => {
-        const linkFile  = link.getAttribute('href').split('/').pop();
+        const href = link.getAttribute('href');
+        if (href) {
+            const linkFile = href.split('/').pop();
         
-        if (linkFile === currentFile || (currentFile === '' && linkFile === 'index.html')) {
-            link.classList.add('nav-link-active-custom');
-        } else {
-            link.classList.remove('nav-link-active-custom'); 
+            if (linkFile === currentFile || (currentFile === '' && linkFile === 'index.html')) {
+                link.classList.add('nav-link-active-custom');
+            } else {
+                link.classList.remove('nav-link-active-custom'); 
+            }
         }
     });
 }
