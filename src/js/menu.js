@@ -17,7 +17,7 @@ function setActiveLink() {
         if (href) {
             const linkFile = href.split('/').pop();
         
-            if (linkFile === currentFile || (currentFile === '' && linkFile === 'index.html')) {
+            if (linkFile === currentFile || (currentFile === '' && linkFile === '../../index.html')) {
                 link.classList.add('nav-link-active-custom');
             } else {
                 link.classList.remove('nav-link-active-custom'); 
